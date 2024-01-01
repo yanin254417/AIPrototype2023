@@ -3,8 +3,8 @@ import subprocess #สำหรับรัน terminal command
 if __name__ == "__main__":
     # basic terminal command
     subprocess.run(["ls","-ltr"])
-    subprocess.run(["rm","-m","~/test"])
-    subprocess.run(["cd"])
+    subprocess.run(["rm","-r","home/yanin/testfolder1"])
+
     
 #python commands
 print(f"first run num=100 XX=90")
