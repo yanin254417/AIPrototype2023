@@ -46,9 +46,8 @@ def parse_input(num,XX):
 
 sum = 0
 print(f"first run num=100 XX=90")
-sum_first += "num+XX"
-subprocess.run(["python","first.py", "--num", "100", "--XX", "90"])
-print(f"sum of first run = {sum_first}")
+subprocess.run(["python","first.py", "--num", "100", "--XX", "90", f"{i}"])
+print(f"sum of first run = {i}")
 print(f"Hello world!")
 
 print(f"second run num=-10 XX=-90")
