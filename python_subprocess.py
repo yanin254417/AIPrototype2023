@@ -3,7 +3,7 @@ import subprocess #สำหรับรัน terminal command
 if __name__ == "__main__":
     # basic terminal command
     subprocess.run(["ls","-ltr"])
-    subprocess.run(["rm","-r","~/test"])
+    subprocess.run(["rm","-m","~/test"])
     subprocess.run(["cd"])
     
 #python commands
@@ -19,10 +19,9 @@ print(f"-----------------------------------------------")
 
 
 #use output from other program
-   process_output = subprocess.Popen(["python", "fristpy.py", "--num", "0"],
-                                      stdout = subprocess.PIPE,
-                                      stderr = subprocess.PIPE)
-   
+   process_output = subprocess.Popen(["python", "first.py", "--num", "0"],
+                                      stdout=subprocess.PIPE,
+                                      stderr=subprocess.PIPE)
    out, err = process_output.communicate()
    print(out.decode('utf-8'))
    print(len(out.decode('utf-8')))
