@@ -27,6 +27,7 @@ print(out.decode('utf-8'))
 print(len(out.decode('utf-8')))
 
 #HW เขียน subprocess sum output ทั้งหมดของ 3 อันข้างบน (ตัวเลขก่อน Hello world!)
+import argparse
 def parse_input()
     parser = argparse.ArgumentParser()
 
