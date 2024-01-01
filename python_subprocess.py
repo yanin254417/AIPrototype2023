@@ -19,9 +19,10 @@ print(f"-----------------------------------------------")
 
 
 #use output from other program
-   process_output = subprocess.Popen(["python", "first.py", "--num", "0"],
+process_output = subprocess.Popen(["python", "first.py", "--num", "0"],
                                       stdout=subprocess.PIPE,
                                       stderr=subprocess.PIPE)
-   out, err = process_output.communicate()
-   print(out.decode('utf-8'))
-   print(len(out.decode('utf-8')))
+out, err = process_output.communicate()
+print(out.decode('utf-8'))
+print(len(out.decode('utf-8')))
+
