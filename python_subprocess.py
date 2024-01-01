@@ -32,12 +32,12 @@ def parse_input(num,XX):
     parser = argparse.ArgumentParser("--num", "--XX")
 
 parser.add_argument(
-    "--num"
+    "--num",
     type=int,
     required=True,
 )
 parser.add_argument(
-    "--XX"
+    "--XX",
     type=int,
     default=7
 )
