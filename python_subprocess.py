@@ -31,18 +31,18 @@ import argparse
 def parse_input(num,XX):
     parser = argparse.ArgumentParser("--num", "--XX")
 
-parser.add_argument(
+    parser.add_argument(
     "--num",
     type=int,
     required=True,
 )
-parser.add_argument(
+    parser.add_argument(
     "--XX",
     type=int,
     default=7
 )
 
-args = parser.parse_args()
+    args = parser.parse_args()
 
 print(f"first run num=100 XX=90")
 subprocess.run(["python","first.py", "--num", "100", "--XX", "90"])
