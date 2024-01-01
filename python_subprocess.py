@@ -27,15 +27,32 @@ print(out.decode('utf-8'))
 print(len(out.decode('utf-8')))
 
 #HW เขียน subprocess sum output ทั้งหมดของ 3 อันข้างบน (ตัวเลขก่อน Hello world!)
+def parse_input()
+    parser = argparse.ArgumentParser()
+
+parser.add_argument(
+    '--num'
+    type=int,
+    required=True,
+)
+parser.add_argument(
+    '--XX'
+    type=int,
+    default=7
+)
+
+args = parser.parse_args()
+
 print(f"first run num=100 XX=90")
-subprocess.run(["python","first.py", "--num", "100", "--XX", "90", "sum"])
+subprocess.run(["python","first.py", "--num", "100", "--XX", "90"])
 print(f"Hello world!")
+
 print(f"second run num=-10 XX=-90")
-subprocess.run(["python","first.py", "--num", "-10", "--XX", "-90", "sum"])
+subprocess.run(["python","first.py", "--num", "-10", "--XX", "-90"])
 print(f"Hello world!")
+
 print(f"third run num=0")
-subprocess.run(["python","first.py", "--num", "0", "sum"])
+subprocess.run(["python","first.py", "--num", "0"])
 print(f"Hello world!")
-print(f"fourth run XX=7")
-subprocess.run(["python","first.py", "--XX", "7", "sum"])
-print(f"Hello world!")
+
+
