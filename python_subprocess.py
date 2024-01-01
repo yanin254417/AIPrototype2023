@@ -28,8 +28,8 @@ print(len(out.decode('utf-8')))
 
 #HW เขียน subprocess sum output ทั้งหมดของ 3 อันข้างบน (ตัวเลขก่อน Hello world!)
 import argparse
-def parse_input(--num,--XX)
-    parser = argparse.ArgumentParser()
+def parse_input(num,XX)
+    parser = argparse.ArgumentParser("--num", "--XX")
 
 parser.add_argument(
     '--num'
