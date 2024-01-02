@@ -57,17 +57,17 @@ if __name__ == "_main_":
 sum = 0
 print(f"first run num=100 XX=90")
 first = subprocess.run(["python","first.py", "--num", "100", "--XX", "90"])
-print(f'the input XX is {input_v.XX}')
+print(f'the input XX is {first.XX}')
 print(f"Hello world!")
 
 print(f"second run num=-10 XX=-90")
 second = subprocess.run(["python","first.py", "--num", "-10", "--XX", "-90"])
-print(f'the input XX is {input_v.XX}')
+print(f'the input XX is {second.XX}')
 print(f"Hello world!")
 
 print(f"third run num=0")
 third = subprocess.run(["python","first.py", "--num", "0"])
-print(f'the input XX is {input_v.XX}')
+print(f'the input XX is {third.XX}')
 print(f"Hello world!")
 
 
