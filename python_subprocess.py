@@ -28,6 +28,7 @@ print(len(out.decode('utf-8')))
 
 #HW เขียน subprocess sum output ทั้งหมดของ 3 อันข้างบน (ตัวเลขก่อน Hello world!)
 import argparse
+
 def parse_input():
     parser = argparse.ArgumentParser()
 
@@ -45,29 +46,18 @@ def parse_input():
     args = parser.parse_args()
     return args
 
-def multiplyby9(inputV):
-    print(9*inputV)
-
-if __name__ == "_main_":
-    input_v = parse_input()
-    print(f'the input XX is {input_v.XX}')
-    print('we are in the main function')
-    multiplyby9(input_v.num)
 
 sum = 0
 print(f"first run num=100 XX=90")
 subprocess.run(["python","first.py", "--num", "100", "--XX", "90"])
-print(f'the input XX is {input_v.XX}')
 print(f"Hello world!")
 
 print(f"second run num=-10 XX=-90")
 subprocess.run(["python","first.py", "--num", "-10", "--XX", "-90"])
-print(f'the input XX is {input_v.XX}')
 print(f"Hello world!")
 
 print(f"third run num=0")
 subprocess.run(["python","first.py", "--num", "0"])
-print(f'the input XX is {input_v.XX}')
 print(f"Hello world!")
 
 
