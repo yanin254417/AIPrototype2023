@@ -30,7 +30,7 @@ print(len(out.decode('utf-8')))
 # ss sum output ทั้งหมดของ 3 อันข้างบน (ตัวเลขก่อน Hello world!)
 def extract_numeric(word):
     s = [float(s)]
-    for s in re.findall(r'-?\d+\.?\d*', sentence)
+    for s in re.findall(r'-?\d+\.?\d*', sentence):
     print(s)
 import argparse
 
