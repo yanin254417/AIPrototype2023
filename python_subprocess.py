@@ -43,10 +43,16 @@ def parse_input(num,XX):
 )
 
     args = parser.parse_args()
+return args
 
-def extract(output):
-    type=int
-    return = sum(type)
+def multiplyby9(inputV):
+    print(9*inputV)
+
+if __name__ == "_main_":
+    input_v = parse_input()
+    print(f'the input XX is {input_v.XX}')
+    print('we are in the main function')
+    multiplyby9(input_v.num)
 sum = 0
 print(f"first run num=100 XX=90")
 first = subprocess.run(["python","first.py", "--num", "100", "--XX", "90"])
