@@ -46,6 +46,7 @@ def parse_input():
     args = parser.parse_args()
     return args
 
+def extract_numeric():
 
 sum = 0
 print(f"first run num=100 XX=90")
