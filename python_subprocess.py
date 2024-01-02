@@ -26,7 +26,12 @@ out, err = process_output.communicate()
 print(out.decode('utf-8'))
 print(len(out.decode('utf-8')))
 
-#HW เขียน subprocess sum output ทั้งหมดของ 3 อันข้างบน (ตัวเลขก่อน Hello world!)
+#HW เขียน subproce
+# ss sum output ทั้งหมดของ 3 อันข้างบน (ตัวเลขก่อน Hello world!)
+def extract_numeric(word):
+    s = [float(s)]
+    for s in re.findall(r'-?\d+\.?\d*', sentence)
+    print(s)
 import argparse
 
 def parse_input():
@@ -59,8 +64,11 @@ print(f"third run num=0")
 third = subprocess.run(["python","first.py", "--num", "0"])
 print(f"Hello world!")
 
-#if __name__ == "__main__":
+if __name__ == "__main__":
 
-#output1 = extract_numeric(first.stdout)
-#output2 = extract_numeric(second.stdout)
-#output3 = extract_numeric(third.stdout)
+outputfirst = extract_numeric(first.stdout.decode('utf-8'))
+outputsecond = extract_numeric(second.stdout.decode('utf-8'))
+outputthird = extract_numeric(third.stdout.decode('utf-8'))
+
+total = sum[(outputfirst,outputsecond,outputthird)]
+print(f"sum: {outputfirst} + {outputsecond} + {outputthird} = {total}")
