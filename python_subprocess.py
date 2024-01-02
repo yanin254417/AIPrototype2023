@@ -70,9 +70,9 @@ if __name__ == "__main__":
 
 
 
-output1 = extract_numeric(first.stdout.decode('utf-8'))
-output2 = extract_numeric(second.stdout.decode('utf-8'))
-output3 = extract_numeric(third.stdout.decode('utf-8'))
+    output1 = extract_numeric(first.stdout.decode('utf-8'))
+    output2 = extract_numeric(second.stdout.decode('utf-8'))
+    output3 = extract_numeric(third.stdout.decode('utf-8'))
 
-total = sum[(outputfirst,outputsecond,outputthird)]
-print(f"sum: {outputfirst} + {outputsecond} + {outputthird} = {total}")
+total = sum[(output1,output2,output3)]
+print(f"sum: {output1} + {output2} + {output3} = {total}")
