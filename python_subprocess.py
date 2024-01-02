@@ -43,7 +43,7 @@ def parse_input(num,XX):
 )
 
     args = parser.parse_args()
-return args
+    return args
 
 def multiplyby9(inputV):
     print(9*inputV)
