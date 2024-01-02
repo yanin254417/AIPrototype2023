@@ -31,7 +31,7 @@ print(len(out.decode('utf-8')))
 import argparse
 import re
 def extract_numeric(word):
-    for i in word.splitline():
+    for i in word.splitlines():
         if i.strip().isdigit() or (i.strip().lstrip('-').isdigit()):
             return int(i.strip())
     return 0 
