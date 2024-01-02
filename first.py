@@ -1,6 +1,6 @@
 import argparse
 
-def parse_input():
+def parse_input( ):
     parser = argparse.ArgumentParser()
 
     parser.add_argument(
@@ -22,6 +22,7 @@ def parse_input():
 
 def printHello():
     print("Hello World!")
+
 
 def multiplyby9(inputV):
     print(9*inputV)
