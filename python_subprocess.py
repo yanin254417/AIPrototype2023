@@ -46,8 +46,6 @@ def parse_input():
     args = parser.parse_args()
     return args
 
-def extract_numeric():
-
 
 print(f"first run num=100 XX=90")
 first = subprocess.run(["python","first.py", "--num", "100", "--XX", "90"])
@@ -61,8 +59,8 @@ print(f"third run num=0")
 third = subprocess.run(["python","first.py", "--num", "0"])
 print(f"Hello world!")
 
-if __name__ == "__main__":
+#if __name__ == "__main__":
 
-output1 = extract_numeric(first.stdout)
-output2 = extract_numeric(second.stdout)
-output3 = extract_numeric(third.stdout)
+#output1 = extract_numeric(first.stdout)
+#output2 = extract_numeric(second.stdout)
+#output3 = extract_numeric(third.stdout)
