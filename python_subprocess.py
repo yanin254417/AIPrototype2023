@@ -28,11 +28,13 @@ print(len(out.decode('utf-8')))
 
 #HW เขียน subproce
 # ss sum output ทั้งหมดของ 3 อันข้างบน (ตัวเลขก่อน Hello world!)
-def extract_numeric(word):
-    s = [float(s)]
-    for s in re.findall(r'-?\d+\.?\d*', sentence):
-    print(s)
 import argparse
+import re
+def extract_numeric(word):
+    for i in word.splitline():
+        if i.strip().isdigit() or (i.strip().lstrip('-').isdigit()):
+    return 0 
+
 
 def parse_input():
     parser = argparse.ArgumentParser()
