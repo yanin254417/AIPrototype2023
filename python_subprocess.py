@@ -37,7 +37,7 @@ def extract_numeric(word):
     return 0 
 
 
-def parse_input():
+#def parse_input():
     parser = argparse.ArgumentParser()
 
     parser.add_argument(
