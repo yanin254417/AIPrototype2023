@@ -57,15 +57,15 @@ def extract_numeric(word):
 if __name__ == "__main__":
 
     print(f"first run num=100 XX=90")
-    first = subprocess.run(["python","first.py", "--num", "100", "--XX", "90"])#, capture_output = True)
+    first = subprocess.run(["python","first.py", "--num", "100", "--XX", "90"], capture_output = True)
     print(f"Hello world!")
 
     print(f"second run num=-10 XX=-90")
-    second = subprocess.run(["python","first.py", "--num", "-10", "--XX", "-90"])#, capture_output = True)
+    second = subprocess.run(["python","first.py", "--num", "-10", "--XX", "-90"], capture_output = True)
     print(f"Hello world!")
 
     print(f"third run num=0")
-    third = subprocess.run(["python","first.py", "--num", "0"])#, capture_output = True)
+    third = subprocess.run(["python","first.py", "--num", "0"], capture_output = True)
     print(f"Hello world!")
 
 
@@ -74,5 +74,5 @@ if __name__ == "__main__":
     output2 = extract_numeric(second.stdout.decode('utf-8'))
     output3 = extract_numeric(third.stdout.decode('utf-8'))
 
-    total = sum([output1,output2,output3])
+    total = sum([output1, output2, output3])
     print(f"sum: {output1} + {output2} + {output3} = {total}")
