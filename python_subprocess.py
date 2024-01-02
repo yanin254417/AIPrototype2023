@@ -33,6 +33,7 @@ import re
 def extract_numeric(word):
     for i in word.splitline():
         if i.strip().isdigit() or (i.strip().lstrip('-').isdigit()):
+            return int(i.strip())
     return 0 
 
 
