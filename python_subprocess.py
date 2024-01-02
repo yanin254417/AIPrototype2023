@@ -48,7 +48,7 @@ def parse_input():
 
 def extract_numeric():
 
-sum = 0
+
 print(f"first run num=100 XX=90")
 first = subprocess.run(["python","first.py", "--num", "100", "--XX", "90"])
 print(f"Hello world!")
