@@ -48,25 +48,24 @@ def parse_input(num,XX):
 def multiplyby9(inputV):
     print(9*inputV)
 
+
+sum = 0
+print(f"first run num=100 XX=90")
+first = subprocess.run(["python","first.py", "--num", "100", "--XX", "90"])
+print(f"Hello world!")
+
+print(f"second run num=-10 XX=-90")
+second = subprocess.run(["python","first.py", "--num", "-10", "--XX", "-90"])
+print(f"Hello world!")
+
+print(f"third run num=0")
+third = subprocess.run(["python","first.py", "--num", "0"])
+print(f"Hello world!")
+
+
 if __name__ == "_main_":
     input_v = parse_input()
     print(f'the input XX is {input_v.XX}')
     print('we are in the main function')
     multiplyby9(input_v.num)
-sum = 0
-print(f"first run num=100 XX=90")
-first = subprocess.run(["python","first.py", "--num", "100", "--XX", "90"])
-print(f"sum of first run = {extract(first)}")
-print(f"Hello world!")
-
-print(f"second run num=-10 XX=-90")
-second = subprocess.run(["python","first.py", "--num", "-10", "--XX", "-90"])
-print(f"sum of second run = {extract(second)}")
-print(f"Hello world!")
-
-print(f"third run num=0")
-third = subprocess.run(["python","first.py", "--num", "0"])
-print(f"sum of third run = {extract(third)}")
-print(f"Hello world!")
-
-print(f"extract(first+second+third)")
+    
