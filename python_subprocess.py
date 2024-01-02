@@ -49,17 +49,19 @@ def parse_input():
 
 sum = 0
 print(f"first run num=100 XX=90")
-subprocess.run(["python","first.py", "--num", "100", "--XX", "90"])
+first = subprocess.run(["python","first.py", "--num", "100", "--XX", "90"])
 print(f"Hello world!")
 
 print(f"second run num=-10 XX=-90")
-subprocess.run(["python","first.py", "--num", "-10", "--XX", "-90"])
+second = subprocess.run(["python","first.py", "--num", "-10", "--XX", "-90"])
 print(f"Hello world!")
 
 print(f"third run num=0")
-subprocess.run(["python","first.py", "--num", "0"])
+third = subprocess.run(["python","first.py", "--num", "0"])
 print(f"Hello world!")
 
+if __name__ == "__main__":
 
-
-    
+output1 = extract_numeric(first.stdout)
+output2 = extract_numeric(second.stdout)
+output3 = extract_numeric(third.stdout)
