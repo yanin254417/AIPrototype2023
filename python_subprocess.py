@@ -74,5 +74,5 @@ if __name__ == "__main__":
     output2 = extract_numeric(second.stdout.decode('utf-8'))
     output3 = extract_numeric(third.stdout.decode('utf-8'))
 
-total = sum[(output1,output2,output3)]
-print(f"sum: {output1} + {output2} + {output3} = {total}")
+    total = sum([output1,output2,output3])
+    print(f"sum: {output1} + {output2} + {output3} = {total}")
