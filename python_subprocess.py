@@ -45,7 +45,8 @@ def parse_input(num,XX):
     args = parser.parse_args()
 
 def extract(output):
-    
+    type=int
+    return = sum(type)
 sum = 0
 print(f"first run num=100 XX=90")
 first = subprocess.run(["python","first.py", "--num", "100", "--XX", "90"])
