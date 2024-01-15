@@ -5,11 +5,11 @@ import json
 app = Flask(__name__)
 
 @app.route("/")
-def hollower():
+def holloworld():
     return "Hello, World"
 
 @app.route("/name")
-def hollower():
+def holloYanin():
     return "Hello, Yanin!"
 
 if __name__ == "__main__":
