@@ -38,7 +38,16 @@ def upload_file():
         file = request.files['file']
         file.save('filename')
         return render_template("home.html",name='upload completed')
-
+    
+    return '''
+    <!doctype html>
+    <title>Upload new File</title>
+    <h1>Upload new File</h1>
+    <form method=post enctype=multipart/form-data>
+      <input type=file name=file>
+      <input type=submit value=Upload>
+    </form>
+    '''
 if __name__ == "__main__":
     app.run(host='0.0.0.0',debug=True,port=5001)#host='0.0.0.0', port=500
 
