@@ -1,5 +1,5 @@
 from flask import Flask, request, render_template, make_response
-import sys
+import sys 
 import json
 
 app = Flask(__name__)
@@ -27,6 +27,17 @@ def homefn():
         print(namein, file=sys.stdout)
         print(lastnamein, file=sys.stdout)
         return render_template("home.html",name=namein)
+
+@app.route('/upload', methods=['GET', 'POST'])
+def upload_file():
+    if request.method == 'POST':
+    #check if the post request has the file part
+    #   if 'file' not in request.files:
+    #       flash('No file part')
+    #        return redirect(request.url)
+        file = request.files['file']
+        file.save('filename')
+        return render_template("home.html",name='upload completed')
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0',debug=True,port=5001)#host='0.0.0.0', port=500
