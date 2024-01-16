@@ -1,5 +1,5 @@
 from flask import Flask, request, render_template, make_response
-
+import sys
 import json
 
 app = Flask(__name__)
@@ -14,7 +14,7 @@ def holloYanin():
 
 @app.route("/home", methods=['POST','GET'])
 def homefn():
-    print('we are in home')
+    print('we are in home', file=sys.stdout)
     namein = request.form.get('fname')
     lastnamein = request.form.get('lname')
     print(namein)
