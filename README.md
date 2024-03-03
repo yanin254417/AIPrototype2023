@@ -25,7 +25,7 @@ __________________________
 ## คาบที่ 8 ([19/02/67 ](https://github.com/yanin254417/AIPrototype2023/blob/72af55e8e6fcd40b5084c7d77385a50d71e355ba/%E0%B8%84%E0%B8%B2%E0%B8%9A%E0%B8%97%E0%B8%B5%E0%B9%88%208.pdf))
 - Tensor Flow
 
-# WEB PAGE 🌻🌟([Web Page](file:///C:/ubuntu/AIPrototype2023/test_webpage/index.html))
+# WEB PAGE 🌻🌟([Web Page](https://yanin254417.github.io/test_webpage/index.html))
 
 # WEB APP! 🌻🌟([Web App](file:///C:/ubuntu/AIPrototype2023/webapp.html))
 
