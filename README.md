@@ -15,7 +15,7 @@ __________________________
 
 
 ## คาบที่ 5 ([15/01/67 ](https://github.com/yanin254417/AIPrototype2023/blob/72af55e8e6fcd40b5084c7d77385a50d71e355ba/%E0%B8%84%E0%B8%B2%E0%B8%9A%E0%B8%97%E0%B8%B5%E0%B9%88%205.pdf))
-- firstflask (firstflask.py)
+- firstflask 
 
 ## คาบที่ 6 ([16/01/67 ](https://github.com/yanin254417/AIPrototype2023/blob/72af55e8e6fcd40b5084c7d77385a50d71e355ba/%E0%B8%84%E0%B8%B2%E0%B8%9A%E0%B8%97%E0%B8%B5%E0%B9%88%206.pdf))
 - Web Page
